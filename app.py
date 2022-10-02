@@ -54,7 +54,7 @@ def write_ui():
     ############### add widgets in sidebar ##################
     # add a course5 logo
     st.sidebar.title("Know me")
-    img = Image.open(os.path.join('abhi.jpg'))
+    img = Image.open('abhi.jpg')
     st.sidebar.image(img)
     # sel = st.sidebar.selectbox('Select', ["Named Entity Recognition","Token Attributes Extraction","Sentiment Analysis","Classification"])
     # uncomment the options below to test out the app with a variety of classification models.
