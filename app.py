@@ -3,7 +3,7 @@ import gc
 import logging
 import os
 import pandas as pd
-import psutil
+# import psutil
 import streamlit as st
 from PIL import Image
 from streamlit import components
@@ -20,8 +20,8 @@ logging.basicConfig(
     format="%(asctime)s : %(levelname)s : %(message)s", level=logging.INFO
 )
 
-def print_memory_usage():
-    logging.info(f"RAM memory % used: {psutil.virtual_memory()[2]}")
+# def print_memory_usage():
+#     logging.info(f"RAM memory % used: {psutil.virtual_memory()[2]}")
 
 def write_sidebar_footer():
     st.sidebar.markdown('''
