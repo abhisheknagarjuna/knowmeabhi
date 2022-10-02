@@ -59,7 +59,7 @@ def write_ui():
     # sel = st.sidebar.selectbox('Select', ["Named Entity Recognition","Token Attributes Extraction","Sentiment Analysis","Classification"])
     # uncomment the options below to test out the app with a variety of classification models.
     write_sidebar_footer()
-    name_email_cols = st.beta_columns(2)
+    name_email_cols = st.columns(2)
     name = name_email_cols[0].text_input(
         "Please enter your name"
     )
@@ -79,7 +79,7 @@ def write_ui():
         # st.markdown(res[0])
 
 #         st.header(res["answers"][0]["answer"])
-        st.write(res["answers"][0]["answer"])
+        st.write(res["answers"][0])
         st.markdown("        ")
         if st.button('Not satisfied with the answer. Press here'):
             feedback = "no"
