@@ -139,7 +139,7 @@ def search_pipeline(utt):
     # pipe_es.add_node(component=retriever, name="es", inputs=["Query"])
     # res = pipe_es.run(query=utt, top_k_retriever=2)
     qa_pipe = ExtractiveQAPipeline(reader=reader, retriever=retriever)
-    res = qa_pipe.run(query=utt, top_k_retriever=2, top_k_reader=1)
+    res = qa_pipe.run(query=utt, params={"Retriever": {"top_k": 2}, "Reader": {"top_k": 2}})
     # return [x.to_dict()['text'] for x in res["documents"]]
     return res
 
