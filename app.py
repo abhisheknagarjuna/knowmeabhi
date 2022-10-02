@@ -79,7 +79,7 @@ def write_ui():
         # st.markdown(res[0])
 
 #         st.header(res["answers"][0]["answer"])
-        st.write(res)
+        st.write(res["answers"][0]["answer"])
         st.markdown("        ")
         if st.button('Not satisfied with the answer. Press here'):
             feedback = "no"
