@@ -9,10 +9,10 @@ from PIL import Image
 from streamlit import components
 # from streamlit.caching import clear_cache
 # from bs4 import BeautifulSoup
-from haystack.pipeline import  ExtractiveQAPipeline, Pipeline
-from haystack.document_store.memory import InMemoryDocumentStore
-from haystack.retriever.sparse import TfidfRetriever
-from haystack.reader import FARMReader
+from haystack.pipelines import  ExtractiveQAPipeline, Pipeline
+from haystack.document_stores import InMemoryDocumentStore
+from haystack.nodes import TfidfRetriever
+from haystack.nodes import FARMReader
 
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
