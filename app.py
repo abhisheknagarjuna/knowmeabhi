@@ -8,7 +8,7 @@ import streamlit as st
 from PIL import Image
 from streamlit import components
 # from streamlit.caching import clear_cache
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 from haystack.pipeline import  ExtractiveQAPipeline, Pipeline
 from haystack.document_store.memory import InMemoryDocumentStore
 from haystack.retriever.sparse import TfidfRetriever
