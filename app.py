@@ -130,7 +130,7 @@ def search_pipeline(utt):
     document_store = InMemoryDocumentStore()
     text_file = open("AN.txt", "r")
     lines = text_file.readlines()
-    dicts = [{"text" :x} for x in lines]
+    dicts = [{"content" :x} for x in lines]
     document_store.write_documents(dicts)
     retriever = TfidfRetriever(document_store=document_store)
     reader = FARMReader("deepset/roberta-base-squad2")
