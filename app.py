@@ -78,8 +78,8 @@ def write_ui():
         res = search_pipeline(text)
         # st.markdown(res[0])
 
-        st.header(res["answers"][0]["answer"])
-        st.write(res["answers"][0]["context"])
+#         st.header(res["answers"][0]["answer"])
+        st.write(res)
         st.markdown("        ")
         if st.button('Not satisfied with the answer. Press here'):
             feedback = "no"
